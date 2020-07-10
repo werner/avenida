@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+require './row'
+require './item'
+
 class Board
   attr_accessor :rows
   def initialize(rows)
