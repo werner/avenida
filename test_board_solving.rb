@@ -44,16 +44,21 @@ class TestBoardSolving < Test::Unit::TestCase
 
   def test_with_data
     board = Board.new(problem_with_data)
-    assert_equal(board.solve, solution_with_data)
+    assert_equal(solution_with_data, board.solve)
   end
 
   def test_simple
     board = Board.new(simple_problem)
-    assert_equal(board.solve, simple_solution)
+    assert_equal(simple_solution, board.solve)
   end
 
   def test_empty
     board = Board.new([])
-    assert_equal(board.solve, [])
+    assert_equal([], board.solve)
+  end
+
+  def test_one_plus
+    board = Board.new([['+']])
+    assert_equal([['+']], board.solve)
   end
 end
