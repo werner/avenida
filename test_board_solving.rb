@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'test/unit'
+require './board'
 
 class TestBoardSolving < Test::Unit::TestCase
 
