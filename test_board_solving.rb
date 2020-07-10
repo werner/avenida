@@ -3,8 +3,11 @@
 require 'test/unit'
 require './board'
 
+# Unit test created in order to check 3 problems:
+# board with surrounded mines
+# board with multiple mines
+# empty board
 class TestBoardSolving < Test::Unit::TestCase
-
   def problem_with_data
     [['+', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '-', '+'],
      ['|', '*', ' ', ' ', '*', '*', ' ', '*', '*', '*', ' ', ' ', '*', '|'],
@@ -54,4 +57,3 @@ class TestBoardSolving < Test::Unit::TestCase
     assert_equal(board.solve, [])
   end
 end
-
