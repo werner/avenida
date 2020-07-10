@@ -17,7 +17,7 @@ get '/solve' do
     }.to_s
   else
     {
-      error: "Network Error"
+      error: 'Network Error'
     }.to_s
   end
 end
